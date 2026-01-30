@@ -1,0 +1,47 @@
+# --- Build Artifacts ---
+build/
+bin/
+obj/
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+
+# --- CMake Artifacts ---
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+# If you use the symlink method for clangd:
+.clangd
+
+# --- STM32 / CubeMX Specific ---
+# Usually, we keep the .ioc file as it's the source of truth for CubeMX
+# But we ignore the backup files it creates
+.mxproject
+*.pbi
+*.pbd
+*.browse
+*.pbw
+
+# --- IDEs and Editors ---
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Neovim / Vim
+*.swp
+*.swo
+.netrwhist
+undo/
+
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db
